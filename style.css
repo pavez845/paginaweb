@@ -166,3 +166,79 @@ body {
 	font-weight: 400;
 	font-size: 1.6rem;
 }
+
+
+.navbar {
+    background-color: transparent; 
+    position: absolute; /* Posición absoluta para superponerla */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegurar que esté por encima del carrusel */
+    transition: background-color 0.3s ease; /* Transición de color */
+}
+.navbar:hover {
+    background-color: lemonchiffon; /* Cambiar color de fondo al pasar el ratón */
+}
+.navbar-brand, .navbar-nav .nav-link {
+    color: #000000; /* Color del texto de la barra de navegación */
+    transition: color 0.3s ease; /* Transición de color */
+}
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: orange; /* Cambiar color del texto al pasar el ratón */
+}
+/* Estilos personalizados para el botón "Reserva tu hora" */
+.btn-reserva {
+    background-color: rgb(241, 180, 67); /* Color de fondo naranja */
+    border-color: rgb(253, 177, 36); /* Color del borde naranja */
+}
+/* Estilos personalizados para el título y el texto debajo del carrusel */
+.restaurant-title {
+    text-align: center; /* Alinear el texto al centro */
+    margin-top: 100px; /* Espacio superior */
+    color: #ecb71a; /* Color del texto */
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+}
+.restaurant-description {
+    text-align: center; /* Alinear el texto al centro */
+    margin-bottom: 50px; /* Espacio inferior */
+    color: #666; /* Color del texto */
+    font-size: 1.25rem; /* Tamaño de fuente más grande */
+}
+/* Estilos personalizados para el carrusel */
+#carouselExample {
+    background-image: url('https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg'),
+     url('https://oleico.com/wp-content/uploads/2020/06/original-061eb31f9aaa850b7852a5e4411983a7-scaled-1.jpeg'); /* Establecer las imágenes como fondo */
+    background-size: cover; /* Cubrir todo el área */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    height: 600px; /* Altura del carrusel */
+    position: relative; /* Asegurar que los elementos hijos se posicionen en relación a este */
+}
+.carousel-inner {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad del texto */
+}
+.carousel-item {
+    background-position: center; /* Centrar el fondo */
+    background-size: cover; /* Cubrir todo el área */
+    height: 600px; /* Altura del carrusel */
+}
+.carousel-item img {
+    display: none; /* Ocultar las imágenes del carrusel */
+}
+.plato {
+    transition: 0.5s;
+}
+.collage{
+    width: 70%;
+    height:auto;
+    transition: 0.5s;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.collage:hover{
+    transform: scale(1.1);
+}
+.plato:hover{
+    transform: scale(1.1);
+    
+}
